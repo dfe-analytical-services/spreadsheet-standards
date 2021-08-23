@@ -1,0 +1,29 @@
+---
+title: "Spreadsheet standards"
+author: "Department for Education guidance"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+biblio-style: apalike
+link-citations: yes
+description: "DfE Spreadsheets standards guide"
+---
+
+# Introduction
+
+## Purpose
+
+This document sets out the DfE standards for **all** modellers to follow when designing spreadsheet models. The standards apply to *all* spreadsheet models built, even quick and simple ones.   
+
+Presentation and design must be to high standards: tidy, logical, well-presented and well-laid out spreadsheets are easier to build correctly first time; easier for others to follow; and easier to audit and quality assure. A useful rule of thumb to follow here is that the effort invested in the clarity and layout should be commensurate to the complexity and/or importance of the model. 
+
+Modellers should be aiming for a standard that means another analyst coming to the model completely fresh can understand what the spreadsheet is doing within 30-60 minutes. We must **all** remember that someone may need to revisit the model at some point in the future.  This may be for quality assurance purposes, where following these standards will reduce the number of questions for the model builder. Or perhaps the initial modeller is no longer involved in the work, with an increase in flexible resourcing this will become more prevalent.   
+
+This document works alongside the Department’s [Quality Assurance Guidance](https://educationgovuk.sharepoint.com/:w:/r/sites/sarpi/g/_layouts/15/Doc.aspx?sourcedoc=%7BCE688250-04F4-41A2-9951-230577A8F129%7D&file=DfE%20Quality%20Assurance%20Framework.docx&action=default&mobileredirect=true).
+
+## Design principles and good practice 
+
+Chapter 2 sets out the rules for spreadsheet modelling, organised into three main categories: workbook design; worksheet design; and formula design. Modellers should adhere to these rules, and any decision not to comply should be a conscious one and one that can be explained and justified. 
+
+In addition to the rules, we should acknowledge that individual modellers will have their own preferences and style, and different types of analysis or models will warrant different approaches.  Therefore, Chapter 3 sets out additional good practice guidance, together with links to external guidance on spreadsheet modelling.  The chapter also suggests the sharing of exemplar spreadsheets through the quality assurance area on the DfE intranet.
