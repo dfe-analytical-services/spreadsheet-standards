@@ -8,6 +8,7 @@ documentclass: book
 biblio-style: apalike
 link-citations: yes
 description: "DfE Spreadsheets standards guide"
+favicon: pictures/qa_logo.png
 ---
 
 # Introduction
