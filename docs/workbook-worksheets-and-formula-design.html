@@ -24,7 +24,7 @@
 <meta name="author" content="Department for Education guidance" />
 
 
-<meta name="date" content="2021-08-23" />
+<meta name="date" content="2021-08-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -91,6 +91,7 @@
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
 </ul>
 
       </nav>
@@ -122,6 +123,9 @@
 <li><p>worksheet design: rules relating to the layout of worksheets within your model; and</p></li>
 <li><p>formula design: principles to ensure formula simplicity and formula clarity.</p></li>
 </ul>
+<center>
+<p><img src="pictures/spreadsheet.jpg" title="Image taken from iStock" /></p>
+</center>
 </div>
 <div id="workbook-design" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Workbook design</h2>
@@ -132,12 +136,35 @@
 <li><p>workings (e.g. containing the model’s calculations); and</p></li>
 <li><p>presentation (containing the outputs of the model).</p></li>
 </ul>
+<center>
+<div class="figure">
+<img src="pictures/labels.png" title="Grouping worksheets helps to keep the workbook organised" alt="" />
+<p class="caption">Using colour coding can help with organising and grouping worksheets.</p>
+</div>
+</center>
 <p>This separation offers numerous advantages; for example, ‘workings’ sheets should not be made ‘pretty’ at the expense of calculation clarity – this can be achieved on ‘presentation’ sheets which are designed to be seen by the commissioning policy customer.</p>
 <p>For smaller spreadsheet models, fewer worksheets can be used (e.g. merge the ‘control’ and ‘foundation’ sheets), as long as the layout is the same as a large spreadsheet model with multiple tabs.</p>
 <p><strong>All models must have a control sheet (or sheets)</strong>: as a minimum, these should describe the purpose of the model, give the name of the analyst and date of creation, include a table of contents (with description of each sheet), provide details of the quality assurance undertaken, provide a key for any colour coding used, and list model assumptions and caveats.</p>
+<center>
+<div class="figure">
+<img src="pictures/control.png" title="An example of a control sheet" style="width:50.0%" alt="" />
+<p class="caption">Control sheet should include details of the model and QA</p>
+</div>
+</center>
 <p><strong>All input assumptions must have a recorded basis</strong>: as a minimum, a full list of assumptions used through the model should be created. For models with a large number of assumptions, consider recording these on a separate control sheet. For the highest risk assumptions, a record of authorisation/sign-off must also be kept.</p>
-<p><strong>All models must include a version control sheet</strong>: this holds information on the file name, date, name of analyst making the change, sheet on which change is made, details of the change and record of subsequent QA.</p>
-<p>For each major change, save a new version of the file with a new name. Try to use a naming convention that allows files to be sorted in chronological order and always include the version number in the filename (e.g. V1/V2, V1_1/V1_2). If a version of the model reflects a particular scenario, include a short description of this scenario in the file name or as a tag to the file.</p>
+<center>
+<div class="figure">
+<img src="pictures/assumptions.png" title="An example of an assumptions sheet" style="width:75.0%" alt="" />
+<p class="caption">Colour coding makes it clear which assumptions are hard-coded, and which are determined by formulae.</p>
+</div>
+</center>
+<p><strong>All models must include a version control sheet</strong>: this holds information on the file name, date, name of analyst making the change, sheet on which change is made, details of the change and record of subsequent QA. If a version of the model reflects a particular scenario, include a short description of this scenario in the file name or as a tag to the file. The model should be backed up to Azure DevOps, or saved in Sharepoint. This will allow you to revert to old versions, without needing to have multiple versions of the same document saved.</p>
+<center>
+<div class="figure">
+<img src="pictures/version.png" title="An example of a version log" alt="" />
+<p class="caption">A version log helps to keep track of changes that have been made (and who by) and QA that has been done.</p>
+</div>
+</center>
 <p><strong>Input data to the model</strong>: liaise carefully with those supplying inputs to ensure a full appreciation of scope, definitions, etc. As a minimum, record the following information for input data: who supplied it and when, a link (if available, e.g. if it is published data), its level of quality assurance and if/when it requires updating.</p>
 <p>Input data in the spreadsheet should be exactly as supplied by the supplier; modellers should not be making manual adjustments to supplied data and any amendments should be done by auditable formulae within the model, not prior to the data going into the spreadsheet.</p>
 <p><strong>Distinguish model imports from model exports</strong>: the approach here will be different depending on the size of your model (e.g. colour coding of cells within sheet versus separate tabs). Colour coding of cells/tabs can either be agreed within teams/units/divisions, or simply described on an information sheet so that it can be understood. Do be mindful of colleagues with visual impairments.</p>
@@ -219,7 +246,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": [["Spreadsheet-Standards.pdf", "PDF"]],
 "toc": {
 "collapse": "section"
 }

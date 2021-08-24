@@ -10,6 +10,12 @@ Chapter 2 sets out the rules for spreadsheet modelling, organised into three mai
 
 * formula design: principles to ensure formula simplicity and formula clarity.
 
+<center>
+
+![](pictures/spreadsheet.jpg "Image taken from iStock")
+
+</center>
+
 ## Workbook design
 
 **Group and separate worksheets by type**: You should have four groups/types of worksheets:
@@ -22,17 +28,39 @@ Chapter 2 sets out the rules for spreadsheet modelling, organised into three mai
 
 * presentation (containing the outputs of the model). 
 
+<center>
+
+![Using colour coding can help with organising and grouping worksheets.](pictures/labels.png "Grouping worksheets helps to keep the workbook organised")
+
+</center>
+
 This separation offers numerous advantages; for example, ‘workings’ sheets should not be made ‘pretty’ at the expense of calculation clarity – this can be achieved on ‘presentation’ sheets which are designed to be seen by the commissioning policy customer.  
 
 For smaller spreadsheet models, fewer worksheets can be used (e.g. merge the ‘control’ and ‘foundation’ sheets), as long as the layout is the same as a large spreadsheet model with multiple tabs. 
 
 **All models must have a control sheet (or sheets)**: as a minimum, these should describe the purpose of the model, give the name of the analyst and date of creation, include a table of contents (with description of each sheet), provide details of the quality assurance undertaken, provide a key for any colour coding used, and list model assumptions and caveats. 
 
+<center>
+
+![Control sheet should include details of the model and QA](pictures/control.png "An example of a control sheet"){width=50%}
+
+</center>
+
 **All input assumptions must have a recorded basis**: as a minimum, a full list of assumptions used through the model should be created. For models with a large number of assumptions, consider recording these on a separate control sheet. For the highest risk assumptions, a record of authorisation/sign-off must also be kept.  
 
-**All models must include a version control sheet**: this holds information on the file name, date, name of analyst making the change, sheet on which change is made, details of the change and record of subsequent QA.  
+<center>
 
-For each major change, save a new version of the file with a new name. Try to use a naming convention that allows files to be sorted in chronological order and always include the version number in the filename (e.g. V1/V2, V1_1/V1_2). If a version of the model reflects a particular scenario, include a short description of this scenario in the file name or as a tag to the file. 
+![Colour coding makes it clear which assumptions are hard-coded, and which are determined by formulae.](pictures/assumptions.png "An example of an assumptions sheet"){width=75%}
+
+</center>
+
+**All models must include a version control sheet**: this holds information on the file name, date, name of analyst making the change, sheet on which change is made, details of the change and record of subsequent QA. If a version of the model reflects a particular scenario, include a short description of this scenario in the file name or as a tag to the file. The model should be backed up to Azure DevOps, or saved in Sharepoint. This will allow you to revert to old versions, without needing to have multiple versions of the same document saved.
+
+<center>
+
+![A version log helps to keep track of changes that have been made (and who by) and QA that has been done.](pictures/version.png "An example of a version log")
+
+</center>
 
 **Input data to the model**: liaise carefully with those supplying inputs to ensure a full appreciation of scope, definitions, etc. As a minimum, record the following information for input data: who supplied it and when, a link (if available, e.g. if it is published data), its level of quality assurance and if/when it requires updating.  
 
