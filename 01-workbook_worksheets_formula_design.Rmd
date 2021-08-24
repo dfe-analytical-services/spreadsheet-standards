@@ -64,7 +64,13 @@ For smaller spreadsheet models, fewer worksheets can be used (e.g. merge the ‘
 
 **Input data to the model**: liaise carefully with those supplying inputs to ensure a full appreciation of scope, definitions, etc. As a minimum, record the following information for input data: who supplied it and when, a link (if available, e.g. if it is published data), its level of quality assurance and if/when it requires updating.  
 
-Input data in the spreadsheet should be exactly as supplied by the supplier; modellers should not be making manual adjustments to supplied data and any amendments should be done by auditable formulae within the model, not prior to the data going into the spreadsheet. 
+Input data in the spreadsheet should be exactly as supplied by the supplier; modellers should not be making manual adjustments to supplied data and any amendments should be done by auditable formulae within the model, not prior to the data going into the spreadsheet.
+
+<center>
+
+![Data should not be deleted or overwritten - cleaned data should be saved separately.](pictures/cleaning.png "Cleaning data")
+
+</center>
 
 **Distinguish model imports from model exports**: the approach here will be different depending on the size of your model (e.g. colour coding of cells within sheet versus separate tabs). Colour coding of cells/tabs can either be agreed within teams/units/divisions, or simply described on an information sheet so that it can be understood. Do be mindful of colleagues with visual impairments. 
 
@@ -74,11 +80,23 @@ Input data in the spreadsheet should be exactly as supplied by the supplier; mod
 
 If the model or presentational sheets are to be published, then the output must comply with Departmental accessibility standards. 
 
+<center>
+
+![Results tab for a piece of research into DfE workforce. The figures are pulled in from the calculations tab, and then used to create a chart. Auto-checks are implemented to ensure that rows add up to expected number (i.e. figures are being pulled in correctly).](pictures/results.png "An example of a results tab.")
+
+</center>
+
 **Avoid splitting a model across multiple workbooks**: under certain circumstances, this will be unavoidable; for example, short lead times can necessitate individual modellers working in parallel on separate elements of the model. If data is passed between workbooks, clearly identify imports and exports. Naming links to external files will ensure your model tracks any changes to the location of data in the external file.
 
 ## Worksheet design
 
-**Each column should have a single purpose**: particularly in models containing a large number of rows, a reviewer should be able to read the formula in the top cell and assume this is consistent all the way to the bottom (i.e. avoid a mix of different formulas and hardcoded values). Any exceptions to this must be clearly marked. And this does not over-ride the need for quality assurers to check sums at the bottom of columns or end of rows to ensure formulas are working. 
+**Each column should have a single purpose**: particularly in models containing a large number of rows, a reviewer should be able to read the formula in the top cell and assume this is consistent all the way to the bottom (i.e. avoid a mix of different formulas and hardcoded values). Any exceptions to this must be clearly marked. And this does not over-ride the need for quality assurers to check sums at the bottom of columns or end of rows to ensure formulas are working.
+
+<center>
+
+![A straightforward example of a worksheet. The dates are all formatted the same. The category is chosen from a drop down list. The % is worked out via a formula, which is consistent throughout the column. The total over the percentages gives assurance that the formula used is correct.](pictures/workbook.png "Worksheet example."){width=50%}
+
+</center>
 
 **Provide a clear and unique label for every column which is intuitive for a new user and includes the unit**: some calculation steps can be difficult to describe, but investing the time will reduce the risk of making faulty assumptions and assist the reviewer at a later stage. In addition, being consistent in labelling conventions will assist in using global find and replace if column labels require updating. 
 
@@ -86,7 +104,13 @@ If the model or presentational sheets are to be published, then the output must 
 
 **Avoid hiding rows, columns and worksheets**: generally, any data used in calculations should not be hidden. This is permissible during the model development stage, but not if a model is going to be shared with others. 
 
-**Calculation order on ‘workings’ sheets should flow left to right and top to bottom**: it is extremely helpful for a model reviewer to be able to assume that ‘reading order equals calculation order’. Any exceptions to this should be minimised and clearly marked. 
+**Calculation order on ‘workings’ sheets should flow left to right and top to bottom**: it is extremely helpful for a model reviewer to be able to assume that ‘reading order equals calculation order’. Any exceptions to this should be minimised and clearly marked.
+
+<center>
+
+![In this simple example, the columns are arranged so that the calculation flows from left to right, i.e. 320+4000=4320.](pictures/adding.png "Calculations should flow left to right."){width=50%}
+
+</center>
 
 **Use auto-checks wherever possible**: for example, check that row and column totals are consistent across worksheets. Consider use of a single check sheet which holds all checks of internal consistency and uses conditional formatting to identify errors.
 
@@ -111,5 +135,3 @@ If the model or presentational sheets are to be published, then the output must 
 **When switching signs, use ‘-1 * a’ rather than ‘-a’**: this makes the sign switch as obvious as possible to the model reviewer. 
 
 **VBA/Excel macros**: only use if they add significant value to the model or are necessary (e.g. iterative calculations). Any code must be clearly commented and there must be sufficient capability within the team/unit/division for quality assurance. 
-
-Annex A contains a spreadsheet standards checklist for modellers to use when designing models. 
