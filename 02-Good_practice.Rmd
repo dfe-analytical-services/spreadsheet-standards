@@ -10,6 +10,12 @@ We also provide links to good practice spreadsheets within the Department, and l
 
 **Control sheets**: if sharing a large, complex model, consider including a flow diagram, for example using Excel ‘SmartArt’, to graphically illustrate the model’s structure. 
 
+<center>
+
+![An example of a flow diagram for the High Needs National Funding formula. This flow chart was created in Microsoft Visio.](pictures/hnnff.png)
+
+</center>
+
 **Do not repeat calculations unnecessarily**: even if it is simple to replicate the calculation, it is generally best practice to link back to the source calculation.  During model development, there may be need to do repeat calculations, but this does introduce a verification risk, so care should be taken. 
 
 **Minimise inter-linking between sheets**: in particular linking should only be in one direction and not back and forth across worksheets. Excessive inter-linking can be an indication of poor logic in the design of the model and can complicate the review process. 
@@ -22,9 +28,21 @@ We also provide links to good practice spreadsheets within the Department, and l
 
 **Display column headers and row labels only once in a freeze pane**: include any internal consistency checks (e.g. TRUE/FALSE) in this freeze pane so they are clearly visible. 
 
+<center>
+
+![Utilise Excel features such as Read Only, Freeze Panes and Format as Table.](pictures/excel_tips.png)
+
+</center>
+
 **Do not merge cells**: merged cells can affect the selection of columns and/or rows, are problematic for macros and unmerging cells is time-consuming. As an alternative, use the ‘Center Across Selection’ option from the ‘Format Cells’ dialogue box to achieve the same presentation. 
 
-**Use Named Ranges**: naming individual cells or ranges makes formulas easier to read and understand (e.g. =PRICE\*VAT is easier to understand than =A1\*B1). Carefully manage named ranges using the Excel Name Manager and ensure they are global (rather than local) and well-documented on information sheets. 
+**Use Named Ranges**: naming individual cells or ranges makes formulas easier to read and understand (e.g. =PRICE\*VAT is easier to understand than =A1\*B1). Carefully manage named ranges using the Excel Name Manager and ensure they are global (rather than local) and well-documented on information sheets.
+
+<center>
+
+![Use named ranges to make formulas easier to read.](pictures/named_range.png)
+
+</center>
 
 **In Excel 2010, use the ‘Format as Table’ option for your data**: in this format, formulas entered in the top cell are automatically copied to the bottom of the column. In addition, any formulas that refer to cells in the table will show the column heading in the formula, which improves formula comprehension/clarity. 
 
@@ -36,7 +54,7 @@ We also provide links to good practice spreadsheets within the Department, and l
 
 ## Good practice spreadsheets
 
-There is now an area on DfE’s intranet dedicated to quality assurance on analytical models, where this document and that on the QA guidance are located.  As modellers find examples of best practice, or indeed consider their own models exemplars, these should be shared with others via this page.  There is a strong need for modellers to share and learn from best practice, and senior analysts should encourage the use of this area.
+The DfE's Quality Assurance pages are [here](https://educationgovuk.sharepoint.com/sites/sarpi/g/SitePages/Quality-Assurance.aspx). As modellers find examples of best practice, or indeed consider their own models exemplars, these should be shared with the QA team via modellingandqa@educationgovuk.onmicrosoft.com. The intranet pages will be updated with these examples in due course.  There is a strong need for modellers to share and learn from best practice, and senior analysts should encourage the use of this area.
 
 ## Useful links
 

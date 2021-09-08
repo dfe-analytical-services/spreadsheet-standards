@@ -118,11 +118,24 @@ If the model or presentational sheets are to be published, then the output must 
 
 **Keep formulas as simple and efficient as possible**: if possible, break down very complex, multi-line formulas into smaller parts to aid the reviewer (smaller calculation steps may be required if you cannot explain a formula in a short amount of time). However, complex design is sometimes necessary, particularly when increasing model automation, in such cases, also add comments to help somebody else picking up the model. 
 
+<center>
+![Trying to do several different calculations in one go can lead to some complicated formulae.](pictures/formula_complicated.png){width=80%}
+
+![Splitting calculations up into steps makes the process much easier to follow.](pictures/formula_easy.png){width=80%}
+</center>
+
 **If possible, use a limited set of Excel functions in the model**: avoid functions where the logic is difficult to follow. 
 
 **If possible, avoid Excel functions that are sensitive to structural changes in the model**: some functions (e.g. VLOOKUP and HLOOKUP) can stop functioning as desired because of the insertion or deletion of a row or column and alternative functions (e.g. INDEX-MATCH) should be considered if the spreadsheet is likely to experience structural changes. 
 
 **Minimise use of nested IF statements and array/CSE (CTRL+SHIFT+ENTER) formulas**: nested IF statements are difficult to de-code, reduce a model’s transparency and multiple combinations are often not properly tested. Large array/CSE formulas can slow down calculations and can be difficult to understand – use if the steps required to avoid using an array add unnecessary complexity. Single-cell array formulas are less error prone than multi-cell array formulas. 
+
+<center>
+![Using nested IF statements to calculate to maximum change between two years can result in a complicated formula.](pictures/nested_if_complicated.png){width=80%}
+
+![There is an easier way to do the same thing using the MAX and ABS functions.](pictures/nested_if_easy.png){width=80%}
+
+</center>
 
 **Avoid embedding constants in formulas**: this can conceal a model assumption and reduce a model’s flexibility. Instead, enter the constant in a clearly labelled cell, and link formulas to this cell.  Then, if you need to, by changing one cell, the constant is changed across all linked cells. In certain cases, however, embedding constants is permissible where they cannot be changed (e.g. 12 for months in a year). 
 

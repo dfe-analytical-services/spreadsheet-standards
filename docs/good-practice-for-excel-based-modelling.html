@@ -24,7 +24,7 @@
 <meta name="author" content="Department for Education guidance" />
 
 
-<meta name="date" content="2021-08-24" />
+<meta name="date" content="2021-09-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -68,6 +68,7 @@
 
 <ul class="summary">
 <li class="toc-logo"><a href="./"><img src="pictures/qa_logo.png"></a></li>
+<center><a><font size="3"><b>DfE spreadsheet standards guidance</b></font></a></center>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
@@ -123,14 +124,32 @@
 <div id="good-practice-in-excel" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Good practice in Excel</h2>
 <p><strong>Control sheets</strong>: if sharing a large, complex model, consider including a flow diagram, for example using Excel ‘SmartArt’, to graphically illustrate the model’s structure.</p>
+<center>
+<div class="figure">
+<img src="pictures/hnnff.png" alt="" />
+<p class="caption">An example of a flow diagram for the High Needs National Funding formula. This flow chart was created in Microsoft Visio.</p>
+</div>
+</center>
 <p><strong>Do not repeat calculations unnecessarily</strong>: even if it is simple to replicate the calculation, it is generally best practice to link back to the source calculation. During model development, there may be need to do repeat calculations, but this does introduce a verification risk, so care should be taken.</p>
 <p><strong>Minimise inter-linking between sheets</strong>: in particular linking should only be in one direction and not back and forth across worksheets. Excessive inter-linking can be an indication of poor logic in the design of the model and can complicate the review process.</p>
 <p><strong>Presentation sheets</strong>: adding a ‘control’ element to a presentation sheet can enable users to manipulate the dynamic aspects of a model and see the results without having to shuffle sheets. This also serves as a high-level QA check of the model’s functionality (i.e. do outputs change as expected).</p>
 <p><strong>Save files as ‘read-only’</strong>: ensuring Excel files open as read-only enforces version control as a new version must be saved if changes are made.</p>
 <p><strong>Use hyperlinks to share models rather than sending by email</strong>: this prevents there being multiple versions of the same model in existence.</p>
 <p><strong>Display column headers and row labels only once in a freeze pane</strong>: include any internal consistency checks (e.g. TRUE/FALSE) in this freeze pane so they are clearly visible.</p>
+<center>
+<div class="figure">
+<img src="pictures/excel_tips.png" alt="" />
+<p class="caption">Utilise Excel features such as Read Only, Freeze Panes and Format as Table.</p>
+</div>
+</center>
 <p><strong>Do not merge cells</strong>: merged cells can affect the selection of columns and/or rows, are problematic for macros and unmerging cells is time-consuming. As an alternative, use the ‘Center Across Selection’ option from the ‘Format Cells’ dialogue box to achieve the same presentation.</p>
 <p><strong>Use Named Ranges</strong>: naming individual cells or ranges makes formulas easier to read and understand (e.g. =PRICE*VAT is easier to understand than =A1*B1). Carefully manage named ranges using the Excel Name Manager and ensure they are global (rather than local) and well-documented on information sheets.</p>
+<center>
+<div class="figure">
+<img src="pictures/named_range.png" alt="" />
+<p class="caption">Use named ranges to make formulas easier to read.</p>
+</div>
+</center>
 <p><strong>In Excel 2010, use the ‘Format as Table’ option for your data</strong>: in this format, formulas entered in the top cell are automatically copied to the bottom of the column. In addition, any formulas that refer to cells in the table will show the column heading in the formula, which improves formula comprehension/clarity.</p>
 <p><strong>Excel formulas can contain spaces</strong>: these can be used to separate arguments in complex formulas to improve readability. Also the ALT-RETURN combination can be used to start a new line in the formula bar.</p>
 <p><strong>Make use of Excel’s Formula Auditing tool on the ‘Formulas’ tab</strong>: use the Trace Precedents and Trace Dependents commands to graphically display the relationships between cells and formulas with tracer arrows. The Evaluate Formula tool can also be used to debug a formula by evaluating each part of the formula separately.</p>
@@ -138,7 +157,7 @@
 </div>
 <div id="good-practice-spreadsheets" class="section level2" number="3.3">
 <h2><span class="header-section-number">3.3</span> Good practice spreadsheets</h2>
-<p>There is now an area on DfE’s intranet dedicated to quality assurance on analytical models, where this document and that on the QA guidance are located. As modellers find examples of best practice, or indeed consider their own models exemplars, these should be shared with others via this page. There is a strong need for modellers to share and learn from best practice, and senior analysts should encourage the use of this area.</p>
+<p>The DfE’s Quality Assurance pages are <a href="https://educationgovuk.sharepoint.com/sites/sarpi/g/SitePages/Quality-Assurance.aspx">here</a>. As modellers find examples of best practice, or indeed consider their own models exemplars, these should be shared with the QA team via <a href="mailto:modellingandqa@educationgovuk.onmicrosoft.com" class="email">modellingandqa@educationgovuk.onmicrosoft.com</a>. The intranet pages will be updated with these examples in due course. There is a strong need for modellers to share and learn from best practice, and senior analysts should encourage the use of this area.</p>
 </div>
 <div id="useful-links" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> Useful links</h2>

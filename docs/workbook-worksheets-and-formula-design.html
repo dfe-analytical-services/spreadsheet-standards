@@ -24,7 +24,7 @@
 <meta name="author" content="Department for Education guidance" />
 
 
-<meta name="date" content="2021-08-24" />
+<meta name="date" content="2021-09-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -68,6 +68,7 @@
 
 <ul class="summary">
 <li class="toc-logo"><a href="./"><img src="pictures/qa_logo.png"></a></li>
+<center><a><font size="3"><b>DfE spreadsheet standards guidance</b></font></a></center>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
@@ -209,16 +210,32 @@
 <div id="formula-design" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Formula design</h2>
 <p><strong>Keep formulas as simple and efficient as possible</strong>: if possible, break down very complex, multi-line formulas into smaller parts to aid the reviewer (smaller calculation steps may be required if you cannot explain a formula in a short amount of time). However, complex design is sometimes necessary, particularly when increasing model automation, in such cases, also add comments to help somebody else picking up the model.</p>
+<center>
+<div class="figure">
+<img src="pictures/formula_complicated.png" style="width:80.0%" alt="" />
+<p class="caption">Trying to do several different calculations in one go can lead to some complicated formulae.</p>
+</div>
+<img src="pictures/formula_easy.png" title="fig:" style="width:80.0%" alt="Splitting calculations up into steps makes the process much easier to follow." />
+</center>
 <p><strong>If possible, use a limited set of Excel functions in the model</strong>: avoid functions where the logic is difficult to follow.</p>
 <p><strong>If possible, avoid Excel functions that are sensitive to structural changes in the model</strong>: some functions (e.g. VLOOKUP and HLOOKUP) can stop functioning as desired because of the insertion or deletion of a row or column and alternative functions (e.g. INDEX-MATCH) should be considered if the spreadsheet is likely to experience structural changes.</p>
 <p><strong>Minimise use of nested IF statements and array/CSE (CTRL+SHIFT+ENTER) formulas</strong>: nested IF statements are difficult to de-code, reduce a model’s transparency and multiple combinations are often not properly tested. Large array/CSE formulas can slow down calculations and can be difficult to understand – use if the steps required to avoid using an array add unnecessary complexity. Single-cell array formulas are less error prone than multi-cell array formulas.</p>
+<center>
+<div class="figure">
+<img src="pictures/nested_if_complicated.png" style="width:80.0%" alt="" />
+<p class="caption">Using nested IF statements to calculate to maximum change between two years can result in a complicated formula.</p>
+</div>
+<div class="figure">
+<img src="pictures/nested_if_easy.png" style="width:80.0%" alt="" />
+<p class="caption">There is an easier way to do the same thing using the MAX and ABS functions.</p>
+</div>
+</center>
 <p><strong>Avoid embedding constants in formulas</strong>: this can conceal a model assumption and reduce a model’s flexibility. Instead, enter the constant in a clearly labelled cell, and link formulas to this cell. Then, if you need to, by changing one cell, the constant is changed across all linked cells. In certain cases, however, embedding constants is permissible where they cannot be changed (e.g. 12 for months in a year).</p>
 <p><strong>Reserve use of the ROUND function for the ‘Presentation’ sheets</strong>: perform all calculations on unrounded values.</p>
 <p><strong>Avoid using unnecessary parentheses in formulas</strong>: unless they improve formula clarity or are mathematically necessary.</p>
 <p><strong>Do not use current sheet references in formulas</strong>: these lead to cumbersome formulas which are harder to review.</p>
 <p><strong>When switching signs, use ‘-1 * a’ rather than ‘-a’</strong>: this makes the sign switch as obvious as possible to the model reviewer.</p>
 <p><strong>VBA/Excel macros</strong>: only use if they add significant value to the model or are necessary (e.g. iterative calculations). Any code must be clearly commented and there must be sufficient capability within the team/unit/division for quality assurance.</p>
-<p>Annex A contains a spreadsheet standards checklist for modellers to use when designing models.</p>
 
 </div>
 </div>
