@@ -12,7 +12,7 @@ We also provide links to good practice spreadsheets within the Department, and l
 
 <center>
 
-![An example of a flow diagram for the High Needs National Funding formula. This flow chart was created in Microsoft Visio.](pictures/hnnff.png)
+![An example of a flow diagram for the High Needs National Funding formula.](pictures/hnnff.png "A flow diagram for the High Needs National Funding formula.")
 
 </center>
 
@@ -30,7 +30,7 @@ We also provide links to good practice spreadsheets within the Department, and l
 
 <center>
 
-![Utilise Excel features such as Read Only, Freeze Panes and Format as Table.](pictures/excel_tips.png)
+![Utilise Excel features such as Read Only, Freeze Panes and Format as Table.](pictures/excel_tips.png "A graphic showcasing different Excel features.")
 
 </center>
 
@@ -40,7 +40,7 @@ We also provide links to good practice spreadsheets within the Department, and l
 
 <center>
 
-![Use named ranges to make formulas easier to read.](pictures/named_range.png)
+![Use named ranges to make formulas easier to read.](pictures/named_range.png "A graphic showcasing using named range in Excel.")
 
 </center>
 

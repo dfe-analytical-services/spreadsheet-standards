@@ -24,7 +24,7 @@
 <meta name="author" content="Department for Education guidance" />
 
 
-<meta name="date" content="2021-09-08" />
+<meta name="date" content="2021-09-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -181,7 +181,7 @@
 <center>
 <div class="figure">
 <img src="pictures/results.png" title="An example of a results tab." alt="" />
-<p class="caption">Results tab for a piece of research into DfE workforce. The figures are pulled in from the calculations tab, and then used to create a chart. Auto-checks are implemented to ensure that rows add up to expected number (i.e. figures are being pulled in correctly).</p>
+<p class="caption">Results tab for a piece of research. The figures are pulled in from the calculations tab, and then used to create a chart. Auto-checks are implemented to ensure that rows add up to expected number (i.e. figures are being pulled in correctly).</p>
 </div>
 </center>
 <p><strong>Avoid splitting a model across multiple workbooks</strong>: under certain circumstances, this will be unavoidable; for example, short lead times can necessitate individual modellers working in parallel on separate elements of the model. If data is passed between workbooks, clearly identify imports and exports. Naming links to external files will ensure your model tracks any changes to the location of data in the external file.</p>
@@ -212,21 +212,21 @@
 <p><strong>Keep formulas as simple and efficient as possible</strong>: if possible, break down very complex, multi-line formulas into smaller parts to aid the reviewer (smaller calculation steps may be required if you cannot explain a formula in a short amount of time). However, complex design is sometimes necessary, particularly when increasing model automation, in such cases, also add comments to help somebody else picking up the model.</p>
 <center>
 <div class="figure">
-<img src="pictures/formula_complicated.png" style="width:80.0%" alt="" />
+<img src="pictures/formula_complicated.png" title="A spreadsheet with lots of calculations done in a single step." style="width:80.0%" alt="" />
 <p class="caption">Trying to do several different calculations in one go can lead to some complicated formulae.</p>
 </div>
-<img src="pictures/formula_easy.png" title="fig:" style="width:80.0%" alt="Splitting calculations up into steps makes the process much easier to follow." />
+<img src="pictures/formula_easy.png" title="fig:A spreadsheet with calculations split over several rows." style="width:80.0%" alt="Splitting calculations up into steps makes the process much easier to follow." />
 </center>
 <p><strong>If possible, use a limited set of Excel functions in the model</strong>: avoid functions where the logic is difficult to follow.</p>
 <p><strong>If possible, avoid Excel functions that are sensitive to structural changes in the model</strong>: some functions (e.g. VLOOKUP and HLOOKUP) can stop functioning as desired because of the insertion or deletion of a row or column and alternative functions (e.g. INDEX-MATCH) should be considered if the spreadsheet is likely to experience structural changes.</p>
 <p><strong>Minimise use of nested IF statements and array/CSE (CTRL+SHIFT+ENTER) formulas</strong>: nested IF statements are difficult to de-code, reduce a model’s transparency and multiple combinations are often not properly tested. Large array/CSE formulas can slow down calculations and can be difficult to understand – use if the steps required to avoid using an array add unnecessary complexity. Single-cell array formulas are less error prone than multi-cell array formulas.</p>
 <center>
 <div class="figure">
-<img src="pictures/nested_if_complicated.png" style="width:80.0%" alt="" />
+<img src="pictures/nested_if_complicated.png" title="A spreadsheet that uses nested IF statements can be complicated." style="width:80.0%" alt="" />
 <p class="caption">Using nested IF statements to calculate to maximum change between two years can result in a complicated formula.</p>
 </div>
 <div class="figure">
-<img src="pictures/nested_if_easy.png" style="width:80.0%" alt="" />
+<img src="pictures/nested_if_easy.png" title="A spreadsheet using an alternative formula to avoid nested IF statements." style="width:80.0%" alt="" />
 <p class="caption">There is an easier way to do the same thing using the MAX and ABS functions.</p>
 </div>
 </center>

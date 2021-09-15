@@ -82,7 +82,7 @@ If the model or presentational sheets are to be published, then the output must 
 
 <center>
 
-![Results tab for a piece of research into DfE workforce. The figures are pulled in from the calculations tab, and then used to create a chart. Auto-checks are implemented to ensure that rows add up to expected number (i.e. figures are being pulled in correctly).](pictures/results.png "An example of a results tab.")
+![Results tab for a piece of research. The figures are pulled in from the calculations tab, and then used to create a chart. Auto-checks are implemented to ensure that rows add up to expected number (i.e. figures are being pulled in correctly).](pictures/results.png "An example of a results tab.")
 
 </center>
 
@@ -119,9 +119,9 @@ If the model or presentational sheets are to be published, then the output must 
 **Keep formulas as simple and efficient as possible**: if possible, break down very complex, multi-line formulas into smaller parts to aid the reviewer (smaller calculation steps may be required if you cannot explain a formula in a short amount of time). However, complex design is sometimes necessary, particularly when increasing model automation, in such cases, also add comments to help somebody else picking up the model. 
 
 <center>
-![Trying to do several different calculations in one go can lead to some complicated formulae.](pictures/formula_complicated.png){width=80%}
+![Trying to do several different calculations in one go can lead to some complicated formulae.](pictures/formula_complicated.png "A spreadsheet with lots of calculations done in a single step."){width=80%}
 
-![Splitting calculations up into steps makes the process much easier to follow.](pictures/formula_easy.png){width=80%}
+![Splitting calculations up into steps makes the process much easier to follow.](pictures/formula_easy.png "A spreadsheet with calculations split over several rows."){width=80%}
 </center>
 
 **If possible, use a limited set of Excel functions in the model**: avoid functions where the logic is difficult to follow. 
@@ -131,9 +131,9 @@ If the model or presentational sheets are to be published, then the output must 
 **Minimise use of nested IF statements and array/CSE (CTRL+SHIFT+ENTER) formulas**: nested IF statements are difficult to de-code, reduce a model’s transparency and multiple combinations are often not properly tested. Large array/CSE formulas can slow down calculations and can be difficult to understand – use if the steps required to avoid using an array add unnecessary complexity. Single-cell array formulas are less error prone than multi-cell array formulas. 
 
 <center>
-![Using nested IF statements to calculate to maximum change between two years can result in a complicated formula.](pictures/nested_if_complicated.png){width=80%}
+![Using nested IF statements to calculate to maximum change between two years can result in a complicated formula.](pictures/nested_if_complicated.png "A spreadsheet that uses nested IF statements can be complicated."){width=80%}
 
-![There is an easier way to do the same thing using the MAX and ABS functions.](pictures/nested_if_easy.png){width=80%}
+![There is an easier way to do the same thing using the MAX and ABS functions.](pictures/nested_if_easy.png "A spreadsheet using an alternative formula to avoid nested IF statements."){width=80%}
 
 </center>
 
