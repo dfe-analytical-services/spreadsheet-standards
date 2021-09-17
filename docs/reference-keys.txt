@@ -1,6 +1,7 @@
 introduction
 purpose
 design-principles-and-good-practice
+version-control
 workbook-worksheets-and-formula-design
 introduction-1
 workbook-design

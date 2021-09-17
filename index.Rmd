@@ -28,3 +28,13 @@ This document works alongside the Department’s [Quality Assurance Guidance](ht
 Chapter 2 sets out the rules for spreadsheet modelling, organised into three main categories: workbook design; worksheet design; and formula design. Modellers should adhere to these rules, and any decision not to comply should be a conscious one and one that can be explained and justified. 
 
 In addition to the rules, we should acknowledge that individual modellers will have their own preferences and style, and different types of analysis or models will warrant different approaches.  Therefore, Chapter 3 sets out additional good practice guidance, together with links to external guidance on spreadsheet modelling.  The chapter also suggests the sharing of exemplar spreadsheets through the quality assurance area on the DfE intranet.
+
+## Version control
+
+* v1 - Kate Watson, Sept 2017. Initial version created.
+
+* v1.1 - John Rolfe, June 2019. Links updated.
+
+* v1.2 - Thomas Morley, July 2021. Links updated.
+
+* v2 - Thomas Morley, Sept 2021. Bookdown version created.
