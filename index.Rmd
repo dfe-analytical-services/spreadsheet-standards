@@ -23,11 +23,17 @@ Modellers should be aiming for a standard that means another analyst coming to t
 
 This document works alongside the Department’s [Quality Assurance Guidance](https://educationgovuk.sharepoint.com/:w:/r/sites/sarpi/g/_layouts/15/Doc.aspx?sourcedoc=%7BCE688250-04F4-41A2-9951-230577A8F129%7D&file=DfE%20Quality%20Assurance%20Framework.docx&action=default&mobileredirect=true).
 
+To access the old version of the Dashboard Standards guidance, please click here:
+
+[Spreadsheet Standards guidance](https://educationgovuk.sharepoint.com/:w:/r/sites/sarpi/g/_layouts/15/Doc.aspx?sourcedoc=%7B02034D6D-3C23-4E47-9A9E-6D340EF586BD%7D&file=DfE%20Spreadsheet%20Modelling%20Standards%20for%20excel-based%20models.docx&action=default&mobileredirect=true)
+
 ## Design principles and good practice 
 
 Chapter 2 sets out the rules for spreadsheet modelling, organised into three main categories: workbook design; worksheet design; and formula design. Modellers should adhere to these rules, and any decision not to comply should be a conscious one and one that can be explained and justified. 
 
 In addition to the rules, we should acknowledge that individual modellers will have their own preferences and style, and different types of analysis or models will warrant different approaches.  Therefore, Chapter 3 sets out additional good practice guidance, together with links to external guidance on spreadsheet modelling.  The chapter also suggests the sharing of exemplar spreadsheets through the quality assurance area on the DfE intranet.
+
+
 
 ## Version control
 
