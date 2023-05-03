@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Spreadsheet standards</title>
   <meta name="description" content="DfE Spreadsheets standards guide" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Spreadsheet standards" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="DfE Spreadsheets standards guide" />
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Department for Education guidance" />
 
 
-<meta name="date" content="2021-10-04" />
+<meta name="date" content="2023-05-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +32,8 @@
   <link rel="shortcut icon" href="pictures/qa_logo.png" type="image/x-icon" />
 
 <link rel="next" href="workbook-worksheets-and-formula-design.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,6 +49,9 @@
 
 
 
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -76,6 +78,7 @@
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#purpose"><i class="fa fa-check"></i><b>1.1</b> Purpose</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#design-principles-and-good-practice"><i class="fa fa-check"></i><b>1.2</b> Design principles and good practice</a></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#version-control"><i class="fa fa-check"></i><b>1.3</b> Version control</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#thanks"><i class="fa fa-check"></i><b>1.4</b> Thanks</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="workbook-worksheets-and-formula-design.html"><a href="workbook-worksheets-and-formula-design.html"><i class="fa fa-check"></i><b>2</b> Workbook, worksheets and formula design</a>
 <ul>
@@ -118,12 +121,12 @@
 <div id="header">
 <h1 class="title">Spreadsheet standards</h1>
 <p class="author"><em>Department for Education guidance</em></p>
-<p class="date"><em>2021-10-04</em></p>
+<p class="date"><em>2023-05-03</em></p>
 </div>
-<div id="introduction" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<div id="purpose" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Purpose</h2>
+<div id="introduction" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Introduction<a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="purpose" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Purpose<a href="index.html#purpose" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This document sets out the DfE standards for <strong>all</strong> modellers to follow when designing spreadsheet models. The standards apply to <em>all</em> spreadsheet models built, even quick and simple ones.</p>
 <p>Presentation and design must be to high standards: tidy, logical, well-presented and well-laid out spreadsheets are easier to build correctly first time; easier for others to follow; and easier to audit and quality assure. A useful rule of thumb to follow here is that the effort invested in the clarity and layout should be commensurate to the complexity and/or importance of the model.</p>
 <p>Modellers should be aiming for a standard that means another analyst coming to the model completely fresh can understand what the spreadsheet is doing within 30-60 minutes. We must <strong>all</strong> remember that someone may need to revisit the model at some point in the future. This may be for quality assurance purposes, where following these standards will reduce the number of questions for the model builder. Or perhaps the initial modeller is no longer involved in the work, with an increase in flexible resourcing this will become more prevalent.</p>
@@ -131,19 +134,23 @@
 <p>To access the old version of the Dashboard Standards guidance, please click here:</p>
 <p><a href="https://educationgovuk.sharepoint.com/:w:/r/sites/sarpi/g/_layouts/15/Doc.aspx?sourcedoc=%7B02034D6D-3C23-4E47-9A9E-6D340EF586BD%7D&amp;file=DfE%20Spreadsheet%20Modelling%20Standards%20for%20excel-based%20models.docx&amp;action=default&amp;mobileredirect=true">Spreadsheet Standards guidance</a></p>
 </div>
-<div id="design-principles-and-good-practice" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Design principles and good practice</h2>
+<div id="design-principles-and-good-practice" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Design principles and good practice<a href="index.html#design-principles-and-good-practice" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Chapter 2 sets out the rules for spreadsheet modelling, organised into three main categories: workbook design; worksheet design; and formula design. Modellers should adhere to these rules, and any decision not to comply should be a conscious one and one that can be explained and justified.</p>
 <p>In addition to the rules, we should acknowledge that individual modellers will have their own preferences and style, and different types of analysis or models will warrant different approaches. Therefore, Chapter 3 sets out additional good practice guidance, together with links to external guidance on spreadsheet modelling. The chapter also suggests the sharing of exemplar spreadsheets through the quality assurance area on the DfE intranet.</p>
 </div>
-<div id="version-control" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Version control</h2>
+<div id="version-control" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Version control<a href="index.html#version-control" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><p>v1 - Kate Watson, Sept 2017. Initial version created.</p></li>
 <li><p>v1.1 - John Rolfe, June 2019. Links updated.</p></li>
 <li><p>v1.2 - Thomas Morley, July 2021. Links updated.</p></li>
 <li><p>v2 - Thomas Morley, Sept 2021. Bookdown version created.</p></li>
 </ul>
+</div>
+<div id="thanks" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Thanks<a href="index.html#thanks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Special thanks to Leanne Sunter, who provided a lot of the content for the initial and subsequent drafts.</p>
 
 </div>
 </div>
@@ -157,7 +164,6 @@
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -176,6 +182,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -196,6 +203,10 @@ gitbook.start({
 "text": null
 },
 "download": [["Spreadsheet-Standards.pdf", "PDF"]],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section"
 }

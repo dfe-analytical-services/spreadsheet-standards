@@ -54,7 +54,7 @@ We also provide links to good practice spreadsheets within the Department, and l
 
 ## Good practice spreadsheets
 
-The DfE's Quality Assurance pages are [here](https://educationgovuk.sharepoint.com/sites/sarpi/g/SitePages/Quality-Assurance.aspx). As modellers find examples of best practice, or indeed consider their own models exemplars, these should be shared with the QA team via modellingandqa@educationgovuk.onmicrosoft.com. The intranet pages will be updated with these examples in due course.  There is a strong need for modellers to share and learn from best practice, and senior analysts should encourage the use of this area.
+The DfE's Quality Assurance pages are [here](https://educationgovuk.sharepoint.com/sites/sarpi/g/SitePages/Quality-Assurance.aspx). As modellers find examples of best practice, or indeed consider their own models exemplars, these should be shared with the QA team via education.QATEAM@education.gov.uk. The intranet pages will be updated with these examples in due course.  There is a strong need for modellers to share and learn from best practice, and senior analysts should encourage the use of this area.
 
 ## Useful links
 
@@ -62,5 +62,5 @@ The DfE's Quality Assurance pages are [here](https://educationgovuk.sharepoint.c
 
 * [The Spreadsheet Standards Review Board](http://www.ssrb.org/)
 
-* [List of Excel 2010 keyboard shortcuts](http://office.microsoft.com/en-001/excel-help/keyboard-shortcuts-in-excel-2010-HP010342494.aspx)
+* [List of Excel keyboard shortcuts](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040fq)
 

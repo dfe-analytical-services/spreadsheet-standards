@@ -44,3 +44,7 @@ In addition to the rules, we should acknowledge that individual modellers will h
 * v1.2 - Thomas Morley, July 2021. Links updated.
 
 * v2 - Thomas Morley, Sept 2021. Bookdown version created.
+
+## Thanks
+
+Special thanks to Leanne Sunter, who provided a lot of the content for the initial and subsequent drafts.
